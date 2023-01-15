@@ -1,6 +1,6 @@
 const complimentBtn = document.getElementById("complimentButton")
 const fortuneBtn = document.getElementById("fortuneButton")
-const formElement = docutment.querySelector("form")
+
 
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")

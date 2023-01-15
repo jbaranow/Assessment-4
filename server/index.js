@@ -8,7 +8,7 @@ app.use(express.json());
 
 const { 
     getCompliment,
-    getFortune 
+    getFortune
 } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
