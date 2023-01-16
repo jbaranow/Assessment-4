@@ -11,7 +11,7 @@ module.exports = {
     },
 
     getFortune: (req, res) => {
-        const fortunes = ["Bide your time, for success is near.", "Embrace this love relationship you have", "I learn by going where I have to go.", "It’s time to get moving. Your spirits will lift accordingly.", "Technology is the art of arranging the world so we do not notice it."];
+        const fortunes = ["Bide your time, for success is near.", "Embrace this love relationship you have.", "I learn by going where I have to go.", "It’s time to get moving. Your spirits will lift accordingly.", "Technology is the art of arranging the world so we do not notice it."];
       
         // choose random fortune
         let randomIndex = Math.floor(Math.random() * fortunes.length);
