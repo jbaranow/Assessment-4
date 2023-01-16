@@ -8,8 +8,23 @@
     <button id="fortuneButton">Get a fortune</button>
     <br>
     <br>
+
+    <form id="myForm">
     <input type="text" id="form">
-    <button type="submit">Submit</button>
+    <input type="submit">
+    </form>
+
+    <script>
+      const myForm = document.getElementById('myForm')
+
+      myForm.addEventListener('submit' ,function(event) {
+        event.preventDefault()
+
+        let text = document.getElementById('form').value
+        console.log(text)
+      })
+    </script>
+
     <br>
     <br>
     <select>dropdown
