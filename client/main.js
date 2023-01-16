@@ -1,5 +1,6 @@
 const complimentBtn = document.getElementById("complimentButton")
 const fortuneBtn = document.getElementById("fortuneButton")
+const myForm = document.getElementById('myForm')
 
 
 const getCompliment = () => {
@@ -17,8 +18,6 @@ const getFortune = () => {
             alert(data);
     });
 };
-
-const myForm = document.getElementById('myForm')
 
 myForm.addEventListener('submit', (e) => {
   e.preventDefault()
