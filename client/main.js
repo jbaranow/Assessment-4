@@ -18,5 +18,14 @@ const getFortune = () => {
     });
 };
 
+const myForm = document.getElementById('myForm')
+
+myForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  let text = document.getElementById('form').value
+  console.log(text)
+})
+
 complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
