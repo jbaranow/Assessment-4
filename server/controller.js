@@ -21,14 +21,18 @@ module.exports = {
     },
 
     sendInput: (req, res) => {
-        let { id } = req.params;
+
+        res.status(200).send("Input Recieved!")
+
+        //test code below
+        /*let { id } = req.params;
         let { goal } = req.body;
 
         if(!goal) {
             res.status(418).send({message: 'We need a goal!'})
         }
 
-        res.send({ goal: `Your goal is: ${goal} with ID: ${id}`})
+        res.send({ goal: `Your goal is: ${goal} with ID: ${id}`})*/
     }
 
 }
