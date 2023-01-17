@@ -33,6 +33,10 @@ module.exports = {
         }
 
         res.send({ goal: `Your goal is: ${goal} with ID: ${id}`})*/
+    },
+
+    updateInput: (req, res) => {
+        res.status(200).send("Input updated!")
     }
 
 }
