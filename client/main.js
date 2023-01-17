@@ -36,3 +36,4 @@ myForm.addEventListener('submit', (e) => {
 
 complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
+myForm.addEventListener('submit', sendInput)
