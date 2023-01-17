@@ -19,6 +19,14 @@ const getFortune = () => {
     });
 };
 
+const sendInput = myForm => {
+    axios.post("http://localhost:4000/api/input/", myForm)
+        .then(res => {
+            const data = res.data;
+            alert(data);
+    });
+};
+
 myForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
