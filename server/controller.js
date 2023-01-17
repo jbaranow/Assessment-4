@@ -36,7 +36,13 @@ module.exports = {
     },
 
     updateInput: (req, res) => {
+
         res.status(200).send("Input updated!")
+    },
+
+    deleteInput: (req, res) => {
+
+        res.status(200).send("Deleted Goal")
     }
 
 }

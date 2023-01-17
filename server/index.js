@@ -10,12 +10,14 @@ const {
     getCompliment,
     getFortune,
     sendInput,
-    updateInput
+    updateInput,
+    deleteInput
 } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 app.get("/api/fortune", getFortune);
 app.post("/api/input", sendInput);
 app.put("/api/input", updateInput);
+app.delete("/api/input", deleteInput)
 
 app.listen(4000, () => console.log("Server running on 4000"));

@@ -36,6 +36,14 @@ const updateInput = updateForm => {
     });
 };
 
+const deleteInput = updateForm => {
+    axios.delete("http://localhost:4000/api/input/", updateForm)
+        .then(res => {
+            const data = res.data;
+            alert(data);
+    });
+};
+
 myForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
