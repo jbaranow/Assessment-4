@@ -2,6 +2,7 @@ const complimentBtn = document.getElementById("complimentButton")
 const fortuneBtn = document.getElementById("fortuneButton")
 const myForm = document.getElementById('myForm')
 const updateForm = document.getElementById('updateForm')
+const dropDown = document.getElementById('drop')
 
 
 const getCompliment = () => {
@@ -62,3 +63,4 @@ complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
 myForm.addEventListener('submit', sendInput)
 updateForm.addEventListener('submit', updateInput)
+dropDown.addEventListener('change', deleteInput)
